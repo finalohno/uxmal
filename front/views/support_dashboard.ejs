@@ -135,7 +135,7 @@
                                     <div class="text-muted">${r.tipo_problema || 'Reporte de soporte'}</div>
                                 </div>
                                 <div class="text-end">
-                                    <div><span class="badge bg-light text-dark">${r.estado === 'abierto' ? 'Abierto' : 'Cerrado'}</span></div>
+                                    <div><span class="badge bg-light text-dark">${r.estado === 'abierto' ? 'Abierto' : (r.estado === 'en_progreso' ? 'En progreso' : 'Cerrado')}</span></div>
                                     <div class="small text-muted mt-2">Asignado: ${r.asignado ? (r.asignado.nombre + ' ' + (r.asignado.apellido||'')) : '—'}</div>
                                 </div>
                             </div>
