@@ -14,7 +14,7 @@ function showError(title = 'Error', message = 'Ha ocurrido un error') {
         timer: 8000,
         timerProgressBar: true,
         didOpen: (modal) => {
-            // Prevent Swal.close() from closing error alerts prematurely
+         
             modal.dataset.isError = 'true';
         }
     });
